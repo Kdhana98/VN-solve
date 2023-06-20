@@ -1,7 +1,7 @@
 import pandas as pd
 import glob
 
-''' The file list order in our system is:
+''' The file list order for non_hamiltonian in our system is:
 ['non_hamiltonian/list_127_graphs.lst', 'non_hamiltonian/list_2_graphs (2).lst', 'non_hamiltonian/list_487_graphs.lst', 
 'non_hamiltonian/list_164_graphs.lst', 'non_hamiltonian/list_456_graphs.lst', 'non_hamiltonian/list_1_graphs (9).lst', 
 'non_hamiltonian/list_1_graphs (11).lst', 'non_hamiltonian/list_1_graphs (8).lst', 
@@ -23,6 +23,37 @@ import glob
 'non_hamiltonian/list_5_graphs.lst', 'non_hamiltonian/list_149_graphs.lst', 'non_hamiltonian/list_14_graphs.lst', 
 'non_hamiltonian/list_3_graphs (2).lst', 'non_hamiltonian/list_1_graphs (6).lst', 'non_hamiltonian/list_58_graphs.lst', 
 'non_hamiltonian/list_373_graphs.lst', 'non_hamiltonian/list_809_graphs.lst', 'non_hamiltonian/list_497_graphs.lst']
+
+
+The file list in our system for hamiltonian is:
+
+['hamiltonian/list_2_graphs (2).lst', 'hamiltonian/list_60_graphs.lst', 'hamiltonian/list_24_graphs.lst', 
+'hamiltonian/list_37_graphs.lst', 'hamiltonian/list_436_graphs.lst', 'hamiltonian/list_8_graphs (2).lst', 
+'hamiltonian/list_13_graphs.lst', 'hamiltonian/list_4_graphs.lst', 'hamiltonian/list_21_graphs.lst', 
+'hamiltonian/list_2_graphs (6).lst', 'hamiltonian/list_1_graphs (9).lst', 'hamiltonian/list_47_graphs.lst', 
+'hamiltonian/list_1_graphs (8).lst', 'hamiltonian/list_2_graphs (5).lst', 'hamiltonian/list_126_graphs.lst', 
+'hamiltonian/list_42_graphs.lst', 'hamiltonian/list_1842_graphs.lst', 'hamiltonian/list_98_graphs.lst', 
+'hamiltonian/list_2_graphs.lst', 'hamiltonian/list_8_graphs.lst', 'hamiltonian/list_2_graphs (4).lst', 
+'hamiltonian/list_4_graphs (1).lst', 'hamiltonian/list_353_graphs.lst', 'hamiltonian/list_22_graphs (1).lst', 
+'hamiltonian/list_1_graphs (1).lst', 'hamiltonian/list_20_graphs.lst', 'hamiltonian/list_7_graphs (1).lst', 
+'hamiltonian/list_60_graphs (1).lst', 'hamiltonian/list_617_graphs.lst', 'hamiltonian/list_9_graphs.lst', 
+'hamiltonian/list_2_graphs (3).lst', 'hamiltonian/list_34_graphs.lst', 'hamiltonian/list_166_graphs.lst', 
+'hamiltonian/list_21_graphs (1).lst', 'hamiltonian/list_33_graphs.lst', 'hamiltonian/list_21_graphs (3).lst', 
+'hamiltonian/list_21_graphs (4).lst', 'hamiltonian/list_42_graphs (1).lst', 'hamiltonian/list_779_graphs.lst', 
+'hamiltonian/list_1_graphs (4).lst', 'hamiltonian/list_741_graphs.lst', 'hamiltonian/list_1_graphs (5).lst', 
+'hamiltonian/list_8_graphs (1).lst', 'hamiltonian/list_43_graphs.lst', 'hamiltonian/list_21_graphs (2).lst', 
+'hamiltonian/list_3_graphs.lst', 'hamiltonian/list_20_graphs (1).lst', 'hamiltonian/list_1362_graphs.lst', 
+'hamiltonian/list_189_graphs.lst', 'hamiltonian/list_12_graphs.lst', 'hamiltonian/list_6_graphs.lst', 
+'hamiltonian/list_1_graphs.lst', 'hamiltonian/list_72_graphs.lst', 'hamiltonian/list_14_graphs (1).lst', 
+'hamiltonian/list_222_graphs.lst', 'hamiltonian/list_7_graphs (2).lst', 'hamiltonian/list_1_graphs (2).lst', 
+'hamiltonian/list_119_graphs.lst', 'hamiltonian/list_156_graphs.lst', 'hamiltonian/list_17_graphs.lst', 
+'hamiltonian/list_290_graphs.lst', 'hamiltonian/list_1_graphs (7).lst', 'hamiltonian/list_428_graphs.lst',
+'hamiltonian/list_7_graphs.lst', 'hamiltonian/list_1_graphs (3).lst', 'hamiltonian/list_26_graphs.lst', 
+'hamiltonian/list_2_graphs (1).lst', 'hamiltonian/list_94_graphs.lst', 'hamiltonian/list_11_graphs.lst', 
+'hamiltonian/list_5_graphs.lst', 'hamiltonian/list_14_graphs.lst', 'hamiltonian/list_1_graphs (6).lst', 
+'hamiltonian/list_565_graphs.lst', 'hamiltonian/list_308_graphs.lst', 'hamiltonian/list_22_graphs.lst', 
+'hamiltonian/list_100_graphs.lst', 'hamiltonian/list_28_graphs.lst', 'hamiltonian/list_32_graphs.lst', 
+'hamiltonian/list_155_graphs.lst']
 '''
 folder_path = ["non_hamiltonian", "hamiltonian"]  # Replace with the path to your folder
 suffix = "*.lst"  # Replace with the desired suffix
