@@ -13,4 +13,7 @@ The experiment is the same as RGB VN-Solver, except the images are generated in 
 
 
 ## Graph Transformer
-To run the Graphormer experiment, we adopted the graphormer-slim architecture from [(Graphormer)](https://github.com/Microsoft/Graphormer) Github page. Then, to generate the input data, we used the data from [House of Graphs](https://houseofgraphs.org/) website in edge list, i.e., ".lst" format and run the generate_dataset.py code to have graph properties data and edge_data. In the customized dataset folder in Graphormer, we place the hamiltonian_cycle_eval.py code to register the dataset and be able to test and train the Graphormer models. 
+To run the Graphormer experiment, we adopted the graphormer-slim architecture from [(Graphormer)](https://github.com/Microsoft/Graphormer) Github page. Then, to generate the input data, we used the data from [House of Graphs](https://houseofgraphs.org/) website in edge list, i.e., ".lst" format and run the generate_dataset.py code to have graph properties data and edge_data. In the customized dataset folder in Graphormer, we place the hamiltonian_cycle_eval.py code to register the dataset and be able to test and train the Graphormer models. To do a fair comparison, we used 3, 7, 11, 13, and 29 as seeds to split the data which results in having the same graphs as VN-Solver as data to the Graphormer model
+
+## Naive Bayesian
+As we run the experiments, for each seed we generate a folder containing test, train, and validation. In each of these folders, some Hamiltonian and some non-Hamiltonian instances exist. In bayesian.py code, we count the proportion of the Hamiltonian instances to all instances in the training set and set that as a threshold to randomly guess true and false instances in the test set.
